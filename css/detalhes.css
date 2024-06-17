@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+
+.perfil-jogador .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #030303;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeInUp 0.5s ease-in-out; /* Adiciona a animação ao container */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.foto {
+    flex: 1;
+    background-color: #030303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.conteudo {
+    flex: 2;
+    padding: 20px;
+}
+
+.informacoes-principais {
+    text-align: left;
+}
+
+.informacoes-principais h1 {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.informacoes-principais .posicao {
+    font-family: "Abel", sans-serif;
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.informacoes-jogador {
+    margin: 20px 0;
+}
+
+.informacoes-jogador h2 {
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 0;
+}
+
+.informacoes-jogador ul {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2em;
+    list-style: none;
+    padding: 0;
+}
+
+.informacoes-jogador ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.detalhes {
+    margin-top: 20px;
+}
+
+.detalhes h2 {
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 0;
+}
+
+.detalhes p {
+    font-size: 1.1em;
+}
+
+.btn-voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #414040; /* Cor preta */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao:hover {
+    background-color: #444; /* Cor cinza escuro */
+    transform: scale(1.05);
+}
+
+.botao:active {
+    background-color: #222; /* Cor cinza ainda mais escuro */
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+    .perfil-jogador .container {
+        flex-direction: column;
+    }
+
+    .foto {
+        padding: 10px;
+    }
+
+    .conteudo {
+        padding: 10px;
+    }
+
+    .informacoes-principais h1 {
+        font-size: 2em;
+    }
+
+    .informacoes-principais .posicao {
+        font-size: 1em;
+    }
+
+    .informacoes-jogador h2 {
+        font-size: 1.5em;
+    }
+
+    .informacoes-jogador ul li {
+        font-size: 1em;
+    }
+
+    .detalhes h2 {
+        font-size: 1.5em;
+    }
+
+    .detalhes p {
+        font-size: 1em;
+    }
+
+    .btn-voltar {
+        margin-top: 10px;
+    }
+
+    .botao {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
