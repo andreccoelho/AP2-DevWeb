@@ -99,7 +99,7 @@ if (!sessionStorage.getItem("login")) {
     header(body);
     conteudo(body, `
       <main> 
-        <h2>Jogadores</h2>
+        <h2>ELENCO PROFISSIONAL</h2>
 
         <div class="search-bar">
             <input id="search" type="search" placeholder="Digite o nome do jogador..." aria-label="Buscar jogador">
