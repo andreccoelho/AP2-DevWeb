@@ -49,7 +49,7 @@ const handleCardClick = (evento) => {
 const montaCard = (jogador) => {
     const card = document.createElement('article');
     card.classList.add('card');
-    card.dataset.id = jogador.id; // Certifique-se de que o jogador tenha uma propriedade "id".
+    card.dataset.id = jogador.id; 
     card.onclick = handleCardClick;
 
     informacaoJogador(card, jogador, "index");
@@ -65,7 +65,6 @@ const addCards = (data) => {
         jogadoresDiv.insertAdjacentHTML('beforeend', cardHTML);
     });
 
-    // Adicionar event listeners aos novos cards
     document.querySelectorAll('#jogadores article').forEach(card => {
         card.onclick = handleCardClick;
     });

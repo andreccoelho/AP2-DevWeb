@@ -1,7 +1,5 @@
-/*CSS DIVS*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
-
 
 body {
     font-family: "Abel", sans-serif;
@@ -10,14 +8,8 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-
     display: grid;
     grid-template-rows: auto 1fr auto;
-
-    p {
-        color: #ffffff;
-        font-size: 1.3em;
-    }
 }
 
 header {
@@ -25,14 +17,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #030303;
     color: white;
+    background-image: url('img/fundo_header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
 }
 
 header nav {
     flex: 1;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo do nav */
+    justify-content: center;
 }
 
 header .nav-menu {
@@ -92,13 +88,11 @@ header .login-info button:hover {
     color: white;
 }
 
-
-main{
+main {
     padding: 20px;
     max-width: 1200px;
     margin: 40px auto;
 }
-
 
 footer {
     background-color: #030303;
@@ -106,45 +100,43 @@ footer {
     text-align: center;
     padding: 20px 0;
     width: 100%;
-
-    .footer-content {
-        max-width: 1200px;
-        margin: 0 auto;
-
-        p {
-            margin: 5px 0;
-        }
-
-        .logo-ibmec {
-            width: 50px;
-            height: auto;
-            position: relative;
-            bottom: 5px;
-        }
-
-        .divisor{
-            position: relative;
-            bottom: 7px;
-        }
-
-        .logo-botafogo{
-            width: 25px;
-            height: auto;
-        }
-    }
 }
 
-/*CSS COMPONENTES*/
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-button{
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer .footer-content .logo-ibmec {
+    width: 50px;
+    height: auto;
+    position: relative;
+    bottom: 5px;
+}
+
+footer .footer-content .divisor {
+    position: relative;
+    bottom: 7px;
+}
+
+footer .footer-content .logo-botafogo {
+    width: 25px;
+    height: auto;
+}
+
+button {
     background-color: #000000;
     color: #ffffff;
+}
 
-    &:hover {
-        background-color: #ffffff;
-        color: #000000;
-        border: 1px solid #000000;
-    }
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
 }
 
 button[type="submit"] {
@@ -159,39 +151,38 @@ button[type="submit"] {
     header {
         flex-direction: column;
         padding: 10px;
+    }
 
-        .nav-menu {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px 0;
-            width: 100%;
+    header .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        width: 100%;
+    }
 
-            .logo-botafogo{
-                margin-right: 0;
-            }
-        }
+    header .nav-menu .logo-botafogo {
+        margin-right: 0;
+    }
 
-        .nav-menu li {
-            display: none;
-        }
+    header .nav-menu li {
+        display: none;
+    }
 
-        .login-info {
+    header .login-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    header .login-info p {
+        margin: 5px 0;
+    }
 
-        .login-info p {
-            margin: 5px 0;
-        }
-
-        .login-info button {
-            margin-top: 10px;
-            width: 100%;
-            max-width: 200px;
-        }
+    header .login-info button {
+        margin-top: 10px;
+        width: 100%;
+        max-width: 200px;
     }
 
     main {
@@ -201,17 +192,17 @@ button[type="submit"] {
 
     footer {
         padding: 10px 0;
+    }
 
-        .footer-content {
-            padding: 10px;
-        }
+    footer .footer-content {
+        padding: 10px;
+    }
 
-        .footer-content p {
-            font-size: 0.9em;
-        }
+    footer .footer-content p {
+        font-size: 0.9em;
+    }
 
-        .footer-logos .divisor {
-            margin: 0 5px;
-        }
+    footer .footer-logos .divisor {
+        margin: 0 5px;
     }
 }

@@ -8,12 +8,12 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 250px;
-    animation: fadeInUp 0.5s ease-in-out; /* Adiciona a animação ao card */
-    transition: transform 0.3s ease-in-out; /* Transição para a animação de hover */
+    animation: fadeInUp 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out; 
 }
 
 .card:hover {
-    transform: scale(1.05); /* Animação de crescimento suave ao passar o mouse */
+    transform: scale(1.05); 
 }
 
 .foto img {
@@ -60,19 +60,19 @@
 }
 
 .info ul a {
-    display: block; /* Torna o link um bloco */
-    text-decoration: none; /* Remove sublinhado */
-    color: #ffffff; /* Cor do link */
+    display: block; 
+    text-decoration: none; 
+    color: #ffffff; 
     background-color: #555;
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 4px; /* Bordas arredondadas */
-    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+    padding: 10px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, color 0.3s; 
     text-align: center;
 }
 
 .info ul a:hover {
     background-color: #555;
-    color: white; /* Cor do texto ao passar o mouse */
+    color: white; 
 }
 
 .detalhes .botao {

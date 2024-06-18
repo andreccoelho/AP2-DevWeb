@@ -30,7 +30,6 @@ const header = (header) => {
     `);
 }
 
-
 const footer = (footer) => {
     conteudo(footer, `
         <footer>

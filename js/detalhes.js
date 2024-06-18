@@ -1,8 +1,6 @@
 import {footer, header, informacaoJogador} from "./script.js";
 
-// FUNÇÕES
 
-// montaCardDetalhe: monta o card com as informações do jogador
 const montaCardDetalhe = (jogador) => {
     const card = document.createElement("div");
     card.classList.add("card");
