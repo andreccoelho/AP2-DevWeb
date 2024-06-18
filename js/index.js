@@ -86,6 +86,7 @@ if (!sessionStorage.getItem("login")) {
         <header></header>
         <main>        
         <div class="container">
+            <img alt="Logo Botafogo" src="img/botafogo.png" class="logo-botafogo">
             <h1>Bem vindo(a)!</h1>
             <p>Aqui você encontra informações sobre todo o elenco do Fogão.</p>
             <p>Para acessar o conteúdo, faça login.</p>

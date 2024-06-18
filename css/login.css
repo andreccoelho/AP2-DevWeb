@@ -22,6 +22,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+img {
+    width: 100px;
+    height: auto;
+}
+
 label {
     display: block;
     margin-bottom: 5px;

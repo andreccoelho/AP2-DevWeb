@@ -36,6 +36,7 @@ if (sessionStorage.getItem("login")) {
     conteudo(
         body,
         `
+         <img alt="Logo Botafogo" src="img/botafogo.png" class="logo-botafogo">
          <h1>Faça Login</h1>
     
             <label for="senha">Senha:</label>
